@@ -1,0 +1,35 @@
+server:
+  port: 7788
+spring:
+  application:
+    name: app-config
+  cloud:
+    config:
+      server:
+        git: #配置git仓库地址
+          uri: https://gitee.com/hsio/huang.git
+          search-paths:
+            - huang #配置文件目录地址
+          username: 15870679714@163.com #码云账号（公司项目不用设置）
+          password: Hjf840..
+      label: master #分支名称
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@127.0.0.1:8100/eureka,http://root:123456@127.0.0.1:9100/eureka,http://root:123456@127.0.0.1:7100/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true #将自己的IP地址注册到服务中心
+    instance-id: ${spring.application.name}###${server.port} #指定实例ID
+#开启所有端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

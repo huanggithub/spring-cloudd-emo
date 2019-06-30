@@ -1,0 +1,28 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@127.0.0.1:8100/eureka,http://root:123456@127.0.0.1:9100/eureka,http://root:123456@127.0.0.1:7100/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.application.name}###${server.port}
+#    name: huang
+spring:
+  cloud:
+    config:
+      #uri: http://127.0.0.1:8888/  #配置中心的地址
+      profile: dev #对应配置服务中的{profile}
+      label: master #对应的分支
+      name: huang
+      discovery:
+        enabled: true
+        service-id: app-config
+  application:
+    name: app-config-client
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest

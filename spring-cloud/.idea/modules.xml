@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/huang-config/huang-config.iml" filepath="$PROJECT_DIR$/huang-config/huang-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huang-eureka/huang-eureka.iml" filepath="$PROJECT_DIR$/huang-eureka/huang-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huang-eureka-2/huang-eureka-2.iml" filepath="$PROJECT_DIR$/huang-eureka-2/huang-eureka-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huang-eureka-3/huang-eureka-3.iml" filepath="$PROJECT_DIR$/huang-eureka-3/huang-eureka-3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huang-gateway/huang-gateway.iml" filepath="$PROJECT_DIR$/huang-gateway/huang-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huang-item/huang-item.iml" filepath="$PROJECT_DIR$/huang-item/huang-item.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huang-item-2/huang-item-2.iml" filepath="$PROJECT_DIR$/huang-item-2/huang-item-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huang-order/huang-order.iml" filepath="$PROJECT_DIR$/huang-order/huang-order.iml" />
+    </modules>
+  </component>
+</project>
